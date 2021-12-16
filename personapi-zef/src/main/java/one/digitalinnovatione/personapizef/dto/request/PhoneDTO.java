@@ -15,6 +15,7 @@ import javax.validation.constraints.Size;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+// objeto responsavel por receber os dados de entrada
 public class PhoneDTO {
 
     private Long id;

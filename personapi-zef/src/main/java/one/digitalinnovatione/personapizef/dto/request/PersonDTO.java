@@ -17,6 +17,8 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+
+// objeto responsavel por receber os dados de entrada
 public class PersonDTO {
 
     private Long id;

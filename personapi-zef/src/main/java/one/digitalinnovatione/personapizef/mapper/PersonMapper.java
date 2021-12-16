@@ -4,26 +4,17 @@ import one.digitalinnovatione.personapizef.dto.request.PersonDTO;
 import one.digitalinnovatione.personapizef.entity.Person;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.factory.Mappers;
 
 
-@Mapper(componentModel = "spring")
+@Mapper
 public interface PersonMapper {
 
-    @Mapping(target = "birthDate", source = "birthDate", dateFormat = "dd-MM-yyyy")
-    Person toModel(PersonDTO dto);
+    PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);
 
-    PersonDTO toDTO(Person dto);
+    @Mapping(target= "birthDate", source= "birthDate" ,dateFormat = "dd-MM-yyy")
+        // toModel para converter de objeto para banco de dados
+    Person toModel(PersonDTO personDTO);
 
-    Object clone() throws CloneNotSupportedException;
-
-    @Override
-    boolean equals(Object obj);
-
-    void finalize() throws Throwable;
-
-    @Override
-    int hashCode();
-
-    @Override
-    String toString();
+    PersonDTO toDTO(Person person);
 }
