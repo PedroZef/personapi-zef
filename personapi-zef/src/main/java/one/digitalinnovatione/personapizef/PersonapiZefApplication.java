@@ -1,13 +1,15 @@
 package one.digitalinnovatione.personapizef;
 
-import org.springframework.boot.SpringApplication;
+import static org.springframework.boot.SpringApplication.run;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class PersonapiZefApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PersonapiZefApplication.class, args);
+
+		run(PersonapiZefApplication.class, args);
 	}
 
 }

@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="personapi-zef" target="11" />
+      <module name="personapi-zef" target="3.8.4." />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
